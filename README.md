@@ -6,13 +6,13 @@ The app uses the **Open-Meteo Geocoding API** to find the latitude and longitude
 
 ## Features
 
-- 🌍 Search weather by city/location
-- 🌡️ Displays current temperature
-- 💧 Displays humidity
-- 💨 Displays wind speed
-- 📍 Converts location name into latitude & longitude
-- ⚡ Uses Axios for API requests
-- 🔄 Fetches real-time weather data
+- Search weather by city/location
+- Displays current temperature
+- Displays humidity
+- Displays wind speed
+- Converts location name into latitude & longitude
+- Uses Axios for API requests
+- Fetches real-time weather data
 
 ## Technologies Used
 
