@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherLy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="mousam.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="search-btn">
+            <input type="text" placeholder="Search" id="inpt">
+            <button><i class="fa-solid fa-magnifying-glass" id="srhIcon"></i></button>
+        </div>
+        <div class="middle">
+            <img src="icon.png" alt="" id="sunImg">
+            <h1></h1>
+            <p class="name"></p>
+        </div>
+
+        <div class="end">
+            <div class="one">
+                <p class="ws"></p>
+                <p class="wsTag"></p>
+            </div>
+
+            <div class="two">
+                <p class="h-code"></p>
+                <p class="h-tag"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="mousam.js"></script>
+</body>
+
+</html>
