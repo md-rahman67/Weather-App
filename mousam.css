@@ -1,76 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body {
-    background-image: url("https://i.pinimg.com/736x/14/23/fb/1423fb124764765d629e3fcf41a58d14.jpg");
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    background:
+        linear-gradient(rgba(8, 20, 45, 0.45), rgba(8, 20, 45, 0.7)),
+        url("https://i.pinimg.com/736x/14/23/fb/1423fb124764765d629e3fcf41a58d14.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-h1{
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 0px;
+/* Main Card */
+.weather-card {
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Search */
+.search-btn {
+    max-width: 330px;
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+#inpt {
+    border-radius: 50px;
+    padding-left: 15px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.search-btn button {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+/* Weather Icon */
+#sunImg {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 15px 0;
+}
+
+/* Temperature */
+h1 {
+    color: white;
+    line-height: 1.1;
+}
+
+/* City Name */
+.name {
     color: white;
 }
 
-.container{
-    padding: 1rem;
-    text-align: center;
-    height: 60vh;
-    width: 90%;
-    max-width: 500px;
-    background-color: rgba(141, 217, 245, 0.46);
-    border-radius: 1rem;
-}
-.fa-sun{
-    color: yellow;
-    font-size: 20px;
-    margin: 1rem 0 0 0;
-}
-.name{
-    color: white;
-    margin-top: 0px;
-    font-size: x-large;
+/* Weather Details */
+.end {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#sunImg{
-    height: 10rem;
-}
-#inpt{
-    padding-left: 1rem;
-    height: 2rem;
-    width: 50%;
-    border-radius: 1rem;
-    border: 2px solid pink;
-}
-#srhIcon{
-    color: white;
-
-}
-button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: rgba(249, 15, 15, 0.893);
-    border: none;
+.detail-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
 }
 
-.ws, .wsTag, .name, .h-code, .h-tag{
+.detail-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Text */
+.ws,
+.wsTag,
+.h-code,
+.h-tag {
     color: white;
 }
 
-.wsTag, .h-tag{
-    font-size: small;
+.wsTag,
+.h-tag {
+    opacity: 0.65;
 }
 
-.end{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
+/* Mobile */
+@media (max-width: 400px) {
+    .weather-card {
+        padding: 24px !important;
+    }
+
+    #sunImg {
+        width: 125px;
+        height: 125px;
+    }
 }
